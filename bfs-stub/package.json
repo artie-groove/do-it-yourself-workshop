@@ -1,0 +1,23 @@
+{
+  "author": "tema4ka",
+  "name": "bfs-stub",
+  "email": "apple2000@mail.ru",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "bem-environ": "1.4.0"
+  },
+  "devDependencies": {
+    "bem": "0.9.0",
+    "bower": "1.3.9",
+    "bower-npm-install": "0.5.9",
+    "stylus": "0.47.3",
+    "bem-tools-autoprefixer": "0.0.3"
+  },
+  "scripts": {
+    "postinstall": "bower-npm-install",
+    "deps": "bower-npm-install --non-interactive"
+  }
+}

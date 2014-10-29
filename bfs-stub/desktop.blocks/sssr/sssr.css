@@ -1,0 +1,13 @@
+/*
+    Document   : bfs-stub/desktop．blocks/sssr/sssr．css
+    Created on : 2014-10-29 02:46 PM
+    Author     : tema4ka
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+.sssr_loading .content
+{
+    opacity: 0.5;
+}

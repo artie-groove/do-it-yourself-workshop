@@ -1,0 +1,691 @@
+/* ../../desktop.blocks/page/page.css begin */
+.page {
+  font-family: Tahoma, sans-serif;
+  min-height: 100%;
+  margin: 0;
+  padding-top: 100px;
+  background: #000;
+}
+/* ../../desktop.blocks/page/page.css end */
+/* ../../desktop.blocks/sssr/sssr.css begin */
+/*
+    Document   : bfs-stub/desktop．blocks/sssr/sssr．css
+    Created on : 2014-10-29 02:46 PM
+    Author     : tema4ka
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+.sssr_loading .content {
+  opacity: 0.5;
+}
+/* ../../desktop.blocks/sssr/sssr.css end */
+/* ../../desktop.blocks/header/header.css begin */
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 10%;
+  background: #f6f6f6;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1), 0 10px 20px -5px rgba(0,0,0,0.4);
+}
+.header .button {
+  margin-left: 10px;
+}
+/* ../../desktop.blocks/header/header.css end */
+/* ../../desktop.blocks/form/form.styl begin */
+.form,
+ctx = '.input_theme_normal',
+ctx {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  background: rgba(0,0,0,0.2);
+/* Decorative element (inner background) */
+}
+.form:before,
+ctx = '.input_theme_normal':before,
+ctx:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  background: #fff;
+}
+.form .input__box,
+ctx = '.input_theme_normal' .input__box,
+ctx .input__box {
+  position: relative;
+  display: block;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form .input__control,
+ctx = '.input_theme_normal' .input__control,
+ctx .input__control {
+  font: inherit;
+  line-height: inherit;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+/* лишние отступы у текста */
+/* нативный крестик */
+}
+.form .input__control::-webkit-search-decoration,
+ctx = '.input_theme_normal' .input__control::-webkit-search-decoration,
+ctx .input__control::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.form .input__control::-webkit-search-cancel-button,
+ctx = '.input_theme_normal' .input__control::-webkit-search-cancel-button,
+ctx .input__control::-webkit-search-cancel-button {
+  display: none;
+}
+.form .input__control::-webkit-input-placeholder,
+ctx = '.input_theme_normal' .input__control::-webkit-input-placeholder,
+ctx .input__control::-webkit-input-placeholder {
+  color: #999;
+  text-indent: 0;
+}
+.form .input__control::-moz-placeholder,
+ctx = '.input_theme_normal' .input__control::-moz-placeholder,
+ctx .input__control::-moz-placeholder {
+  opacity: 1;
+  color: #999;
+}
+.form .input__control::-ms-clear,
+ctx = '.input_theme_normal' .input__control::-ms-clear,
+ctx .input__control::-ms-clear {
+  display: none;
+}
+.form.input_has-clear .input__control,
+ctx = '.input_theme_normal'.input_has-clear .input__control,
+ctx.input_has-clear .input__control {
+  text-overflow: ellipsis;
+}
+.form .input__clear,
+ctx = '.input_theme_normal' .input__clear,
+ctx .input__clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: text;
+  -webkit-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+  opacity: 0;
+  background: 50% 50% no-repeat;
+}
+.form .input__clear_visible,
+ctx = '.input_theme_normal' .input__clear_visible,
+ctx .input__clear_visible {
+  opacity: 0.3;
+}
+.form .input__clear_visible:hover,
+ctx = '.input_theme_normal' .input__clear_visible:hover,
+ctx .input__clear_visible:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.form.input_focused,
+ctx = '.input_theme_normal'.input_focused,
+ctx.input_focused {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+.form.input_disabled,
+ctx = '.input_theme_normal'.input_disabled,
+ctx.input_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.form.input_disabled:before,
+ctx = '.input_theme_normal'.input_disabled:before,
+ctx.input_disabled:before,
+.form.input_disabled .input__clear,
+ctx = '.input_theme_normal'.input_disabled .input__clear,
+ctx.input_disabled .input__clear {
+  display: none;
+}
+.form.input_disabled .input__box,
+ctx = '.input_theme_normal'.input_disabled .input__box,
+ctx.input_disabled .input__box,
+.form.input_disabled .input__control,
+ctx = '.input_theme_normal'.input_disabled .input__control,
+ctx.input_disabled .input__control {
+  color: rgba(0,0,0,0.4);
+  cursor: default;
+}
+.form.input_size_s .input__clear,
+ctx = '.input_theme_normal'.input_size_s .input__clear,
+ctx.input_size_s .input__clear,
+.form.input_size_m .input__clear,
+ctx = '.input_theme_normal'.input_size_m .input__clear,
+ctx.input_size_m .input__clear {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../libs/bem-components/design/common.blocks/input/_theme/_normal/clear_size_s.svg");
+  background-position: 7px 50%;
+}
+.form.input_size_s,
+ctx = '.input_theme_normal'.input_size_s,
+ctx.input_size_s {
+  font-size: 13px;
+  line-height: 16px;
+}
+.form.input_size_s .input__control,
+ctx = '.input_theme_normal'.input_size_s .input__control,
+ctx.input_size_s .input__control {
+  height: 24px;
+  padding-left: 6px;
+}
+.form.input_size_s.input_has-clear .input__box,
+ctx = '.input_theme_normal'.input_size_s.input_has-clear .input__box,
+ctx.input_size_s.input_has-clear .input__box {
+  padding-right: 24px;
+}
+.form.input_size_m,
+ctx = '.input_theme_normal'.input_size_m,
+ctx.input_size_m {
+  font-size: 13px;
+  line-height: 16px;
+}
+.form.input_size_m .input__control,
+ctx = '.input_theme_normal'.input_size_m .input__control,
+ctx.input_size_m .input__control {
+  height: 28px;
+  padding-left: 8px;
+}
+.form.input_size_m.input_has-clear .input__box,
+ctx = '.input_theme_normal'.input_size_m.input_has-clear .input__box,
+ctx.input_size_m.input_has-clear .input__box {
+  padding-right: 28px;
+}
+.form.input_size_m .input__clear,
+ctx = '.input_theme_normal'.input_size_m .input__clear,
+ctx.input_size_m .input__clear {
+  width: 28px;
+  height: 28px;
+  background-position: 9px 50%;
+}
+.form.input_size_l .input__clear,
+ctx = '.input_theme_normal'.input_size_l .input__clear,
+ctx.input_size_l .input__clear,
+.form.input_size_xl .input__clear,
+ctx = '.input_theme_normal'.input_size_xl .input__clear,
+ctx.input_size_xl .input__clear {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../libs/bem-components/design/common.blocks/input/_theme/_normal/clear_size_l.svg");
+  background-position: 9px 50%;
+}
+.form.input_size_l,
+ctx = '.input_theme_normal'.input_size_l,
+ctx.input_size_l {
+  font-size: 15px;
+  line-height: 18px;
+}
+.form.input_size_l .input__control,
+ctx = '.input_theme_normal'.input_size_l .input__control,
+ctx.input_size_l .input__control {
+  height: 32px;
+  padding-left: 10px;
+}
+.form.input_size_l.input_has-clear .input__box,
+ctx = '.input_theme_normal'.input_size_l.input_has-clear .input__box,
+ctx.input_size_l.input_has-clear .input__box {
+  padding-right: 32px;
+}
+.form.input_size_xl,
+ctx = '.input_theme_normal'.input_size_xl,
+ctx.input_size_xl {
+  font-size: 18px;
+  line-height: 22px;
+}
+.form.input_size_xl .input__control,
+ctx = '.input_theme_normal'.input_size_xl .input__control,
+ctx.input_size_xl .input__control {
+  height: 38px;
+  padding-left: 12px;
+}
+.form.input_size_xl.input_has-clear .input__box,
+ctx = '.input_theme_normal'.input_size_xl.input_has-clear .input__box,
+ctx.input_size_xl.input_has-clear .input__box {
+  padding-right: 38px;
+}
+.form.input_size_xl .input__clear,
+ctx = '.input_theme_normal'.input_size_xl .input__clear,
+ctx.input_size_xl .input__clear {
+  width: 38px;
+  height: 38px;
+  background-position: 12px 50%;
+}
+.form.input_width_available,
+ctx = '.input_theme_normal'.input_width_available,
+ctx.input_width_available {
+  width: 100%;
+}
+.form.input_type_textarea,
+ctx = '.input_theme_normal'.input_type_textarea,
+ctx.input_type_textarea {
+  position: relative;
+}
+.form.input_type_textarea .input__control,
+ctx = '.input_theme_normal'.input_type_textarea .input__control,
+ctx.input_type_textarea .input__control {
+  display: block;
+  height: 100%;
+  margin: 0;
+}
+.form.input_type_textarea.input_disabled .input__control,
+ctx = '.input_theme_normal'.input_type_textarea.input_disabled .input__control,
+ctx.input_type_textarea.input_disabled .input__control {
+  resize: none;
+}
+.form.input_type_textarea.input_size_m .input__control,
+ctx = '.input_theme_normal'.input_type_textarea.input_size_m .input__control,
+ctx.input_type_textarea.input_size_m .input__control {
+  line-height: 18px;
+  padding: 4px 6px;
+}
+.form.input_type_textarea.input_size_l .input__control,
+ctx = '.input_theme_normal'.input_type_textarea.input_size_l .input__control,
+ctx.input_type_textarea.input_size_l .input__control {
+  line-height: 20px;
+  padding: 6px 8px;
+}
+.form.input_type_password .input__control,
+ctx = '.input_theme_normal'.input_type_password .input__control,
+ctx.input_type_password .input__control {
+  text-overflow: clip;
+}
+.control-group ctx:before {
+  right: 0;
+}
+.control-group > ctx:last-child:before,
+.control-group > :last-child ctx:before {
+  right: 1px;
+}
+/* ../../libs/bem-components/design/common.blocks/input/_theme/input_theme_normal.styl end */
+/* ../../libs/bem-components/design/common.blocks/button/_theme/button_theme_normal.styl begin */
+.button_theme_normal {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+  white-space: nowrap;
+/* Decorative element (inner background) */
+}
+.button_theme_normal::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+.button_theme_normal .button__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.button_theme_normal .button__text {
+/*
+         * These rules fixes Opera 12+ && IE 9 bug with extra top margin when pressed
+         * Warning: bug still can be reproduced by clicking on button's border
+         * TODO: try to fix
+         */
+  position: relative;
+  display: inline-block;
+}
+.button_theme_normal .icon {
+  position: relative;
+}
+.button_theme_normal.button_type_link {
+  text-decoration: none;
+}
+.button_theme_normal:before {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  content: '';
+  border-radius: 2px;
+  background: #fff;
+}
+.button_theme_normal.button_hovered {
+  cursor: pointer;
+  background: rgba(0,0,0,0.3);
+}
+.button_theme_normal.button_focused-hard {
+  z-index: 1;
+  background: rgba(178,142,0,0.6);
+  box-shadow: 0 0 10px #fc0;
+}
+.button_theme_normal.button_pressed:before {
+  background: #f6f5f3;
+}
+.button_theme_normal.button_checked {
+  background: rgba(153,122,0,0.5);
+}
+.button_theme_normal.button_checked:before {
+  background: #ffeba0;
+}
+.button_theme_normal.button_checked.button_pressed {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_checked.button_pressed:before {
+  background: #fee481;
+}
+.button_theme_normal.button_checked.button_hovered {
+  background: rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_view_action {
+  background: rgba(191,153,0,0.8);
+}
+.button_theme_normal.button_view_action:before {
+  background: #ffdb4d;
+}
+.button_theme_normal.button_view_action.button_pressed:before {
+  background: #fc0;
+}
+.button_theme_normal.button_view_action.button_hovered {
+  background: rgba(159,127,0,0.8);
+}
+.button_theme_normal.button_view_pseudo {
+  overflow: hidden;
+  background: 0;
+}
+.button_theme_normal.button_view_pseudo:before {
+  background: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+.button_theme_normal.button_view_pseudo.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3);
+}
+.button_theme_normal.button_view_pseudo.button_focused-hard:before {
+  box-shadow: 0 0 0 1px rgba(178,142,0,0.6);
+}
+.button_theme_normal.button_view_pseudo.button_pressed:before {
+  background: rgba(0,0,0,0.05);
+}
+.button_theme_normal.button_view_pseudo.button_checked:before {
+  background: #ffeba0;
+  box-shadow: 0 0 0 1px rgba(153,122,0,0.5);
+}
+.button_theme_normal.button_view_pseudo.button_checked.button_hovered:before {
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_view_pseudo.button_checked.button_pressed:before {
+  background: #fee481;
+  box-shadow: 0 0 0 1px rgba(129,103,0,0.6);
+}
+.button_theme_normal.button_disabled {
+  background: rgba(0,0,0,0.08);
+}
+.button_theme_normal.button_disabled:before {
+  display: none;
+}
+.button_theme_normal.button_disabled.button_checked:before {
+  display: block;
+  background: #ffeba0;
+}
+.button_theme_normal.button_disabled .button__text {
+  color: #aaa;
+}
+.button_theme_normal.button_disabled .icon {
+  opacity: 0.3;
+}
+.button_theme_normal.button_size_s {
+  font-size: 13px;
+  line-height: 24px;
+}
+.button_theme_normal.button_size_s .icon {
+  width: 24px;
+}
+.button_theme_normal.button_size_s .button__text {
+  margin: 0 10px;
+}
+.button_theme_normal.button_size_m {
+  font-size: 13px;
+  line-height: 28px;
+}
+.button_theme_normal.button_size_m .icon {
+  width: 28px;
+}
+.button_theme_normal.button_size_m .button__text {
+  margin: 0 13px;
+}
+.button_theme_normal.button_size_l {
+  font-size: 15px;
+  line-height: 32px;
+}
+.button_theme_normal.button_size_l .icon {
+  width: 32px;
+}
+.button_theme_normal.button_size_l .button__text {
+  margin: 0 15px;
+}
+.button_theme_normal.button_size_xl {
+  font-size: 18px;
+  line-height: 38px;
+}
+.button_theme_normal.button_size_xl .icon {
+  width: 38px;
+}
+.button_theme_normal.button_size_xl .button__text {
+  margin: 0 18px;
+}
+.button_theme_normal .icon + .button__text {
+  margin-left: 0;
+}
+.button_theme_normal .button__text:not(:last-child) {
+  margin-right: 0;
+}
+.control-group .button_theme_normal {
+  border-radius: 0;
+}
+.control-group .button_theme_normal:before {
+  right: 0;
+  border-radius: 0;
+}
+.control-group .button_theme_normal.button_checked:before {
+  left: 1px;
+  right: 1px;
+}
+.control-group > .button_theme_normal:first-child,
+.control-group > :first-child .button_theme_normal {
+  border-radius: 3px 0 0 3px;
+}
+.control-group > .button_theme_normal:first-child:before,
+.control-group > :first-child .button_theme_normal:before {
+  border-radius: 2px 0 0 2px;
+}
+.control-group > .button_theme_normal:last-child,
+.control-group > :last-child .button_theme_normal {
+  border-radius: 0 3px 3px 0;
+}
+.control-group > .button_theme_normal:last-child:before,
+.control-group > :last-child .button_theme_normal:before {
+  border-radius: 0 2px 2px 0;
+  right: 1px;
+}
+.control-group > :only-child .button_theme_normal {
+  border-radius: 3px;
+}
+.control-group > :only-child .button_theme_normal:before {
+  border-radius: 2px;
+}
+/* ../../libs/bem-components/design/common.blocks/button/_theme/button_theme_normal.styl end */
+/* ../../desktop.blocks/spin/spin.css begin */
+.spin {
+  margin-left: 1em;
+  vertical-align: middle;
+}
+/* ../../desktop.blocks/spin/spin.css end */
+/* ../../libs/bem-components/design/common.blocks/spin/_theme/spin_theme_normal.styl begin */
+.spin_theme_normal {
+  position: absolute;
+  display: inline-block;
+  visibility: hidden;
+  color: transparent;
+}
+.spin_theme_normal:before {
+  position: absolute;
+  left: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  content: '';
+  border: 2px solid;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+.spin_theme_normal:after {
+  content: '\00A0';
+}
+.spin_theme_normal.spin_progress {
+  position: relative;
+  visibility: visible;
+  -webkit-animation: spin_theme_normal 1s infinite linear;
+  animation: spin_theme_normal 1s infinite linear;
+  background: 0 0 no-repeat url("../../libs/bem-components/design/common.blocks/spin/_theme/spin_theme_normal.gif");
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0)) !important;
+  background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)) !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+/* Accelerate animation */
+}
+.spin_theme_normal.spin_size_xs {
+  line-height: 16px;
+  width: 16px;
+  height: 16px;
+  background-position: 0 0px;
+}
+.spin_theme_normal.spin_size_xs:before {
+  height: 16px;
+}
+.spin_theme_normal.spin_size_s {
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+  background-position: 0 -17px;
+}
+.spin_theme_normal.spin_size_s:before {
+  height: 24px;
+}
+.spin_theme_normal.spin_size_m {
+  line-height: 28px;
+  width: 28px;
+  height: 28px;
+  background-position: 0 -42px;
+}
+.spin_theme_normal.spin_size_m:before {
+  height: 28px;
+}
+.spin_theme_normal.spin_size_l {
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  background-position: 0 -71px;
+}
+.spin_theme_normal.spin_size_l:before {
+  height: 32px;
+}
+.spin_theme_normal.spin_size_xl {
+  line-height: 38px;
+  width: 38px;
+  height: 38px;
+  background-position: 0 -104px;
+}
+.spin_theme_normal.spin_size_xl:before {
+  height: 38px;
+}
+/* ../../libs/bem-components/design/common.blocks/spin/_theme/spin_theme_normal.styl end */
+/* ../../desktop.blocks/island/island.css begin */
+.island {
+  font-size: 18px;
+  line-height: 140%;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px 5px 5px 15px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.4);
+}
+.island__footer {
+  margin-top: 10px;
+}
+.island__image {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+}
+/* ../../desktop.blocks/island/island.css end */
+/* ../../libs/bem-components/common.blocks/image/image.styl begin */
+.image {
+  border: 0;
+}
+/* ../../libs/bem-components/common.blocks/image/image.styl end */
+/* ../../desktop.blocks/content/content.css begin */
+.content {
+  padding: 10px 10%;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+}
+@-webkit-keyframes spin_theme_normal {
+  from {
+    color: #fc0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    color: #fc0;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin_theme_normal {
+  from {
+    color: #fc0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    color: #fc0;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

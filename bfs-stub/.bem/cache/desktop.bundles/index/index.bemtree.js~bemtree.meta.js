@@ -1,0 +1,1 @@
+{"buildFiles":[{"file":"i-bem.bemtree","absPath":"/home/codio/workspace/bfs-stub/libs/bem-core/common.blocks/i-bem/i-bem.bemtree","lastUpdated":1404216383000,"suffix":"bemtree"}]}
